@@ -18,9 +18,7 @@ const LoveMeter = ({ progress }) => {
                 {/* Striped pattern overlay optional */}
                 <div className="w-full h-full opacity-20 bg-[linear-gradient(45deg,rgba(255,255,255,.15)_25%,transparent_25%,transparent_50%,rgba(255,255,255,.15)_50%,rgba(255,255,255,.15)_75%,transparent_75%,transparent)] bg-[length:1rem_1rem]" />
             </div>
-            <div className="text-right text-xs text-gray-500 mt-1 font-mono">
-                {Math.min(100, progress)}%
-            </div>
+
         </div>
     );
 };
