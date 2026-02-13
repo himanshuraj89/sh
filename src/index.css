@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-romantic-light: #FFD1DC;
+  --color-romantic-DEFAULT: #E91E63;
+  --color-romantic-dark: #880E4F;
+  --color-romantic-accent: #FFD700;
+
+  --color-luxury-bg: #0F0508;
+  /* Deep Wine/Dark */
+  --color-luxury-glass: rgba(255, 255, 255, 0.05);
+  --color-luxury-border: rgba(255, 255, 255, 0.1);
+  --color-luxury-text: #FDE8E9;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Outfit", sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-glow: glow 3s ease-in-out infinite alternate;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px rgba(233, 30, 99, 0.2);
+    }
+
+    to {
+      box-shadow: 0 0 30px rgba(233, 30, 99, 0.6);
+    }
+  }
+}
+
+body {
+  background-color: var(--color-luxury-bg);
+  color: var(--color-luxury-text);
+  font-family: var(--font-sans);
+}
+
+.typewriter-cursor::after {
+  content: '|';
+  animation: cursor 1s infinite step-start;
+}
+
+@keyframes cursor {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
