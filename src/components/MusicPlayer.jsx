@@ -54,8 +54,8 @@ const MusicPlayer = () => {
                     id="youtube-audio"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/5gg17XXXiNo?enablejsapi=1&autoplay=1&loop=1&playlist=5gg17XXXiNo&controls=0&showinfo=0"
-                    title="Soft Love Piano"
+                    src="https://www.youtube.com/embed/w8vPqM7326E?enablejsapi=1&autoplay=1&loop=1&playlist=w8vPqM7326E&controls=0&showinfo=0&origin=http://localhost:5173"
+                    title="Dandelions - Ruth B"
                     allow="autoplay; encrypted-media"
                     allowFullScreen
                 ></iframe>
